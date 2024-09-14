@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8aoxiynmoflw"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_8xx6l"]
+
+[sub_resource type="AudioStreamGenerator" id="AudioStreamGenerator_pylde"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_8xx6l")
+
+[node name="PureDataAudioStreamPlayer" type="PureDataAudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamGenerator_pylde")
